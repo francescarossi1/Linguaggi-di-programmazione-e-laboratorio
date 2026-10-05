@@ -1,10 +1,6 @@
 <div align="center">
-
-# 📚 Linguaggi di Programmazione e Laboratorio
-
-  <p>
-    <b>Raccolta di esercitazioni guidate, lezioni di laboratorio e tutorati</b>
-  </p>
+  <h1>📚 Linguaggi di Programmazione e Laboratorio</h1>
+  <p><b>Raccolta di esercitazioni guidate, lezioni di laboratorio e tutorati</b></p>
 
   <!-- BADGES -->
   <a href="https://github.com/francescarossi1/Linguaggi-di-programmazione-e-laboratorio/stargazers">
@@ -16,43 +12,131 @@
   <a href="https://github.com/francescarossi1/Linguaggi-di-programmazione-e-laboratorio/commits/main">
     <img src="https://img.shields.io/github/commit-activity/m/francescarossi1/Linguaggi-di-programmazione-e-laboratorio?style=for-the-badge&color=brightgreen" alt="Commits">
   </a>
-
 </div>
 
----
+<hr />
 
-## 📌 Indice
-- [Contenuti del Corso](#-contenuti-del-corso)
-- [Struttura del Repository](#-struttura-del-repository)
-- [Come Usare il Materiale](#-come-usare-il-materiale)
-- [Autore](#-autore)
+<h2>📌 Indice</h2>
+<ul>
+  <li><a href="#dettaglio-del-contenuto-delle-cartelle">Dettaglio del Contenuto delle Cartelle</a></li>
+  <li><a href="#struttura-della-repository">Struttura della Repository</a></li>
+  <li><a href="#istruzioni-di-compilazione-ed-esecuzione">Istruzioni di Compilazione ed Esecuzione</a></li>
+  <li><a href="#autore">Autore</a></li>
+</ul>
 
----
+<hr />
 
-## 📖 Contenuti del Corso
+<h2 id="dettaglio-del-contenuto-delle-cartelle">📖 Dettaglio del Contenuto delle Cartelle</h2>
+<p>In questa sezione viene descritto il contenuto formativo di ciascuna cartella del corso:</p>
 
-> **Nota:** Questo repository contiene la progressione degli esercizi svolti durante le lezioni e le sessioni di tutorato del corso.
+<ul>
+  <li>
+    <b>🔹 <code>Lezione1/</code> — Primi passi ed Input/Output</b>
+    <ul>
+      <li>Esercizi introduttivi sull'output a schermo (<i>Hello World</i>) e sulla lettura/gestione dell'input numerico da tastiera.</li>
+    </ul>
+  </li>
+  <li>
+    <b>🔹 <code>Lezione2/</code> — Programmazione ad Oggetti e Classe Counter</b>
+    <ul>
+      <li>Progettazione ed implementazione della classe <code>Counter</code> (Contatore). Focus su incapsulamento, costruttori, metodi di incremento/reset e gestione dello stato interno dell'oggetto.</li>
+    </ul>
+  </li>
+  <li>
+    <b>🔹 <code>Lezione3/</code> — Gestione del Tempo e Overloading</b>
+    <ul>
+      <li>Sviluppo della classe <code>Orologio</code> (gestione di ore, minuti e secondi) e applicazione del <b>sovraccarico degli operatori/metodi</b> (<i>Operator/Method Overload</i>) per confrontare e sommare orari.</li>
+    </ul>
+  </li>
+  <li>
+    <b>🔹 <code>Lezione4/</code> — Operatori, Stringhe e Buffer</b>
+    <ul>
+      <li>Esercizi su operatori di decremento, pulizia del buffer di input e manipolazione avanzata delle stringhe.</li>
+    </ul>
+  </li>
+  <li>
+    <b>🔹 <code>Lezione5/</code> — Strutture Dati e Tipi Wrapper</b>
+    <ul>
+      <li>Gestione e scorrimento di <b>array/vettori</b>, estensione dell'applicazione <code>Orologio</code> ed utilizzo dei <b>tipi wrapper</b> per la conversione dei dati.</li>
+    </ul>
+  </li>
+  <li>
+    <b>🔹 <code>Lezione6/</code> — Esercitazione Completa di Laboratorio</b>
+    <ul>
+      <li>Sviluppo e risoluzione dell'esercizio integrativo di laboratorio (<code>es10lab</code>), che sintetizza i concetti di classi, metodi ed algoritmi trattati fino a questo punto.</li>
+    </ul>
+  </li>
+  <li>
+    <b>🔹 <code>Tutorato1/</code> — Algoritmi e Problem Solving</b>
+    <ul>
+      <li>Risoluzione guidata di problemi classici:
+        <ul>
+          <li>Confronto e analisi di <b>coppie di numeri</b>.</li>
+          <li>Algoritmo di calcolo della media e ricerca dei <b>valori sotto la media</b>.</li>
+          <li>Calcolo della <b>frequenza di comparsa dei caratteri</b> in un testo o array.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-### 🗂️ Dettaglio Lezioni:
+<hr />
 
-* **`Lezione1/`**: *Hello World* e prima gestione di lettura/scrittura numeri.
-* **`Lezione2/`**: Implementazione ed esercizi sulla classe/struttura `Counter`.
-* **`Lezione3/`**: Gestione dell'`orologio` e sovraccarico degli operatori (`overload`).
-* **`Lezione4/`**: Operazioni di decremento, gestione del buffer e funzioni sulle stringhe.
-* **`Lezione5/`**: Lavoro sugli array, estensioni del sistema orologio e classi wrapper.
-* **`Lezione6/`**: Esercitazioni avanzate di laboratorio.
-* **`Tutorato1/`**: Risoluzione di problemi pratici (coppia di numeri, calcolo sotto la media, frequenza dei caratteri).
+<h2 id="struttura-della-repository">📂 Struttura della Repository</h2>
 
----
+<pre><code>Linguaggi-di-programmazione-e-laboratorio/
+├── 📁 Lezione1/      # Hello World e lettura dati da tastiera
+├── 📁 Lezione2/      # Esercizi sulla classe Counter
+├── 📁 Lezione3/      # Modello Orologio e overloading dei metodi
+├── 📁 Lezione4/      # Decremento, funzioni per stringhe e gestione buffer
+├── 📁 Lezione5/      # Array di oggetti, estensioni Orologio e tipi Wrapper
+├── 📁 Lezione6/      # Esercitazione di laboratorio (es10lab)
+└── 📁 Tutorato1/     # Coppie di numeri, elementi sotto la media, conteggio caratteri</code></pre>
 
-## 📂 Struttura del Repository
+<hr />
 
-```bash
-Linguaggi-di-programmazione-e-laboratorio/
-├── 📁 Lezione1/      # hello e lettura numero
-├── 📁 Lezione2/      # esercizi Counter
-├── 📁 Lezione3/      # orologio e overload
-├── 📁 Lezione4/      # decremento, funzioni stringhe e buffer
-├── 📁 Lezione5/      # array, orologio e wrapper
-├── 📁 Lezione6/      # es10lab
-└── 📁 Tutorato1/     # coppia numeri, sotto la media, frequenza carattere
+<h2 id="istruzioni-di-compilazione-ed-esecuzione">🛠️ Istruzioni di Compilazione ed Esecuzione</h2>
+
+<h3>1. Clonare il repository</h3>
+<pre><code>git clone https://github.com/francescarossi1/Linguaggi-di-programmazione-e-laboratorio.git
+cd Linguaggi-di-programmazione-e-laboratorio</code></pre>
+
+<h3>2. Compilazione ed Esecuzione</h3>
+<details>
+  <summary><b>🔍 Clicca per espandere le istruzioni per C++, Java e C</b></summary>
+  <br />
+  <h4>🔹 In C++ (<code>g++</code>)</h4>
+  <pre><code>cd Lezione3
+g++ -Wall -std=c++17 -o eseguibile nomefile.cpp
+./eseguibile</code></pre>
+
+  <h4>🔹 In Java (<code>javac</code>)</h4>
+  <pre><code>cd Lezione2
+javac NomeClasse.java
+java NomeClasse</code></pre>
+
+  <h4>🔹 In C (<code>gcc</code>)</h4>
+  <pre><code>cd Lezione1
+gcc -Wall -o eseguibile nomefile.c
+./eseguibile</code></pre>
+</details>
+
+<hr />
+
+<h2 id="autore">👤 Autore</h2>
+
+<table>
+  <tr>
+    <td align="center" width="150">
+      <img src="https://github.com/francescarossi1.png" width="100" height="100" style="border-radius: 50%;" alt="Francesca Rossi Avatar"><br />
+      <b>Francesca Rossi</b>
+    </td>
+    <td>
+      <p><b>Studente / Developer</b></p>
+      <p>Repository curata per raccogliere gli esercizi del corso di Linguaggi di Programmazione e Laboratorio.</p>
+      <a href="https://github.com/francescarossi1">
+        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+      </a>
+    </td>
+  </tr>
+</table>
