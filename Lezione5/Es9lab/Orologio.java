@@ -1,5 +1,3 @@
-import org.w3c.dom.css.Counter;
-
 public class Orologio {
     private Counter[] counter;
 
