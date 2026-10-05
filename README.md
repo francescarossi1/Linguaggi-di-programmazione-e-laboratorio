@@ -16,30 +16,6 @@
 
 <hr />
 
-<h2>📌 Indice</h2>
-
-<table width="100%">
-  <tr>
-    <td align="center" width="33%">
-      <a href="#struttura-della-repository">
-        <b>📂 Struttura Repo</b>
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <a href="#istruzioni-di-compilazione-ed-esecuzione">
-        <b>🛠️ Compilazione</b>
-      </a>
-    </td>
-    <td align="center" width="33%">
-      <a href="#autore">
-        <b>👤 Autore</b>
-      </a>
-    </td>
-  </tr>
-</table>
-
-<hr />
-
 <h2 id="struttura-della-repository">📂 Struttura della Repository</h2>
 
 <pre><code>Linguaggi-di-programmazione-e-laboratorio/
@@ -61,24 +37,11 @@ cd Linguaggi-di-programmazione-e-laboratorio</code></pre>
 
 <h3>2. Compilazione ed Esecuzione</h3>
 
-<h4>🔹 In Java (<code>javac</code>)</h4>
+<h4>🔹 In Java </h4>
 <pre><code>cd Lezione2
 javac NomeClasse.java
 java NomeClasse</code></pre>
 
-<details>
-  <summary><b>🔍 Clicca per espandere le istruzioni per altri linguaggi (C++ / C)</b></summary>
-  <br />
-  <h4>🔹 In C++ (<code>g++</code>)</h4>
-  <pre><code>cd Lezione3
-g++ -Wall -std=c++17 -o eseguibile nomefile.cpp
-./eseguibile</code></pre>
-
-  <h4>🔹 In C (<code>gcc</code>)</h4>
-  <pre><code>cd Lezione1
-gcc -Wall -o eseguibile nomefile.c
-./eseguibile</code></pre>
-</details>
 
 <hr />
 
