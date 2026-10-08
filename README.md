@@ -24,8 +24,12 @@
 ├── 📁 Lezione3/      # Modello Orologio e overloading dei metodi
 ├── 📁 Lezione4/      # Decremento, funzioni per stringhe e gestione buffer
 ├── 📁 Lezione5/      # Array di oggetti, estensioni Orologio e tipi Wrapper
-├── 📁 Lezione6/      # Esercitazione di laboratorio (es10lab)
-└── 📁 Tutorato1/     # Coppie di numeri, elementi sotto la media, conteggio caratteri</code></pre>
+├── 📁 Lezione6/      # Ereditarietà, BiCounter, Persona, Alieni
+├── 📁 Lezione7/      # Polimorfismo, Dottore 
+└── 📁 Tutorato1/     # Coppie di numeri, elementi sotto la media, conteggio
+  caratteri
+└── 📁 Tutorato2/     # Scanner, Videoteca
+</code></pre>
 
 <hr />
 
