@@ -1,21 +1,27 @@
-
 public class Film {
     protected String codice;
     protected String titolo;
-    protected double penaleGiornaliera;
+    protected float penale_giornaliera;
 
-    public Film(String codice, String titolo) {
+    public Film(String codice, String titolo, float penale_giornaliera) {
         this.codice = codice;
         this.titolo = titolo;
+        this.penale_giornaliera = penale_giornaliera;
     }
 
-    public double calcolaPenale(int ritardo) {
-        return this.penaleGiornaliera * ritardo;
+    public float CalcolaPenale(int ritardo) {
+        return penale_giornaliera * ritardo;
     }
 
-    public String toString() {
-        return "[codice= " + this.codice + ", titolo= " + this.titolo + ", penale giornaliera= "
-                + this.penaleGiornaliera
-                + " ]";
+    public String ToString() {
+        return "Codice: " + codice + ", Titolo: " + titolo + ", Penale: " + penale_giornaliera;
+    }
+
+    public String getCodice() {
+        return codice;
+    }
+
+    public String getTitolo() {
+        return titolo;
     }
 }
