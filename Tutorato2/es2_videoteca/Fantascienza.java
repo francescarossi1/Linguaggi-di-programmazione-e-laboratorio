@@ -1,13 +1,13 @@
+
 public class Fantascienza extends Film {
-    public Fantascienza(String codice, String titolo) {
-        super(codice, titolo, 2.5f);
+
+    public Fantascienza(String id, String titolo) {
+        super(id, titolo);
+        this.penale = 2.5;
     }
 
-    public float CalcolaPenale(int ritardo) {
-        if (ritardo >= 1) {
-            return penale_giornaliera * ritardo;
-        } else {
-            return 0.0f;
-        }
+    public double calcolaPenale(int ritardo) {
+        return this.penale * ritardo;
     }
+
 }

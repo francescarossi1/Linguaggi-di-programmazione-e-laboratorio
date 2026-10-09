@@ -1,37 +1,47 @@
 public class Videoteca {
+    public static final int CAT = 5;
+    public static final int NOL = 3;
 
     public static void main(String[] args) {
-        Film catalogo[] = new Film[5];
-        Noleggio noleggi[] = new Noleggio[3];
 
-        catalogo[0] = new Fantascienza("F001", "Interstellar");
-        catalogo[1] = new Fantasy("F002", "Il Signore degli Anelli");
-        catalogo[2] = new Azione("F003", "Mad Max: Fury Road");
-        catalogo[3] = new Fantascienza("F004", "Matrix");
-        catalogo[4] = new Fantasy("F005", "Harry Potter e la Pietra Filosofale");
+        Film[] catalogo = new Film[CAT];
 
-        noleggi[0] = new Noleggio(catalogo[0], 2, "Mario Rossi");
-        noleggi[1] = new Noleggio(catalogo[1], 5, "Luca Bianchi");
-        noleggi[2] = new Noleggio(catalogo[2], 0, "Giulia Verdi");
+        catalogo[0] = new Azione("Az1", "Fast and Furious");
+        catalogo[1] = new Fantasy("Fy1", "La Storia Infinita");
+        catalogo[2] = new Fantascienza("Fz1", "Interstellar");
+        catalogo[3] = new Azione("Az2", "X-Men");
+        catalogo[4] = new Fantascienza("Fz2", "Terminator");
 
-        float penale_totale = 0.0f;
+        Noleggio[] noleggi = new Noleggio[NOL];
+        noleggi[0] = new Noleggio(catalogo[2], 4, "Adriano");
+        noleggi[1] = new Noleggio(catalogo[1], 6, "Mia");
+        noleggi[2] = new Noleggio(catalogo[0], 10, "Luigi");
 
-        String separatore = "---------------------------------------------------------------------------------------";
-
-        // Intestazione tabella
-        System.out.println(separatore);
-        System.out.printf("%-18s | %-10s | %-30s | %-8s | %-10s%n",
-                "Cliente", "Cod. Film", "Titolo Film", "Giorni", "Penale");
-        System.out.println(separatore);
-
+        System.out.println("Lista Noleggi:");
         for (int i = 0; i < noleggi.length; i++) {
-            System.out.println(noleggi[i].ToString());
-            penale_totale += noleggi[i].CalcolaPenale();
+            System.out.println(noleggi[i]);
         }
 
-        // Piè di pagina con totale
-        System.out.println(separatore);
-        System.out.printf("%-75s | %-9.2f%n", "TOTALE PENALI", penale_totale);
-        System.out.println(separatore);
+        /*
+         * for(Noleggio noleggio : noleggi){
+         * System.out.println(noleggio);
+         * }
+         */
+
+        double totalePenali = 0.0;
+
+        for (int i = 0; i < noleggi.length; i++) {
+            totalePenali += noleggi[i].calcolaPenale();
+        }
+
+        /*
+         * for(Noleggio noleggio : noleggi){
+         * totalePenali += noleggio.calcolaPenale();
+         * }
+         */
+
+        System.out.println("Il totale delle penali è: " + totalePenali);
+
     }
+
 }

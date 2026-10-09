@@ -1,25 +1,15 @@
+
 public class Azione extends Film {
-    public Azione(String codice, String titolo) {
-        super(codice, titolo, 3.0f);
+
+    public Azione(String id, String titolo) {
+        super(id, titolo);
+        this.penale = 3.0;
     }
 
-    public float CalcolaPenale(int ritardo) {
-        if (ritardo <= 0) {
-            return 0.0f;
-        } else if (ritardo <= 3) {
-            return penale_giornaliera * ritardo;
-        } else {
-            // Primi 3 giorni standard + 4 € per ciascun giorno dal 4° in poi
-            int giorniExtra = ritardo - 3;
-            return (penale_giornaliera * 3) + (4.0f * giorniExtra);
-        }
-    }
-
-    public String getCodice() {
-        return codice;
-    }
-
-    public String getTitolo() {
-        return titolo;
+    public double calcolaPenale(int ritardo) {
+        if (ritardo > 3) {
+            return this.penale * 3 + (this.penale + 1) * (ritardo - 3);
+        } else
+            return this.penale * ritardo;
     }
 }
