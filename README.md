@@ -19,16 +19,16 @@
 <h2 id="struttura-della-repository">📂 Struttura della Repository</h2>
 
 <pre><code>Linguaggi-di-programmazione-e-laboratorio/
-├── 📁 Lezione1/      # Hello World e lettura dati da tastiera
-├── 📁 Lezione2/      # Esercizi sulla classe Counter
-├── 📁 Lezione3/      # Modello Orologio e overloading dei metodi
-├── 📁 Lezione4/      # Decremento, funzioni per stringhe e gestione buffer
-├── 📁 Lezione5/      # Array di oggetti, estensioni Orologio e tipi Wrapper
+├── 📁 Lezione1/      # Hello World e lettura numero da tastiera
+├── 📁 Lezione2/      # Esercizi sulla classe Counter: equal e copy
+├── 📁 Lezione3/      # Esercizio Orologio e overloading dei metodi Counter
+├── 📁 Lezione4/      # Decremento Counter, funzioni per stringhe: gestione buffer, immutabilità, oggetti, confronto, concatenazione
+├── 📁 Lezione5/      # Array di oggetti, estensioni Orologio e tipi Wrapper, es9_lab e es10_lab
 ├── 📁 Lezione6/      # Ereditarietà, BiCounter, Persona, Alieni
-├── 📁 Lezione7/      # Polimorfismo, Dottore 
+├── 📁 Lezione7/      # Polimorfismo Dottori e Persona, esempi con Counter
 └── 📁 Tutorato1/     # Coppie di numeri, elementi sotto la media, conteggio
   caratteri
-└── 📁 Tutorato2/     # Scanner, Videoteca
+└── 📁 Tutorato2/     # Scanner con stringhe, Videoteca
 </code></pre>
 
 <hr />
