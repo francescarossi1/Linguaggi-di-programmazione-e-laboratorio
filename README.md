@@ -26,9 +26,16 @@
 ├── 📁 Lezione5/      # Array di oggetti, estensioni Orologio e tipi Wrapper, es9_lab e es10_lab
 ├── 📁 Lezione6/      # Ereditarietà, BiCounter, Persona, Alieni
 ├── 📁 Lezione7/      # Polimorfismo Dottori e Persona, esempi con Counter
+├── 📁 Lezione8/      # Classi astratte e interfacce
+├── 📁 Lezione9/      # Eccezioni
+├── 📁 Lezione10/     # Input Output
+├── 📁 Lezione11/     # Collezioni
+├── 📁 Lezione12/     # JCF con tipi generici
+├── 📁 Lezione13/     # Generici
 └── 📁 Tutorato1/     # Coppie di numeri, elementi sotto la media, conteggio
   caratteri
 └── 📁 Tutorato2/     # Scanner con stringhe, Videoteca
+└── 📁 Tutorato3/     # es1:Alieni; es2:Dottori; es3:classi astratte, interfacce; es 4:convertitore
 </code></pre>
 
 <hr />
