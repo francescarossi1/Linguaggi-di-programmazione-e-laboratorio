@@ -1,0 +1,19 @@
+1 pallone
+Adidas
+Team Sala
+XL 29.9 10
+
+2 racchetta
+Wilson
+Blade 98
+320 199.0 15
+
+3 pallone
+Nike
+Flight
+L 34.5 5
+
+4 racchetta
+Head
+Extreme MP
+305 179.0 20

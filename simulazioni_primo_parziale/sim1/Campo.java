@@ -1,4 +1,4 @@
-public class Campo {
+public  class Campo {
   int codice;
   String nome;
   float larghezza, lunghezza, costo;
