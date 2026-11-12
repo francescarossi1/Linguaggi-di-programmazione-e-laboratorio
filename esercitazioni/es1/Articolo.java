@@ -13,6 +13,23 @@ public class Articolo {
     this.sconto = sconto;
   }
 
+  // punto 5
+  public int getCodice() {
+    return codice;
+  }
+
+  public String getMarca() {
+    return marca;
+  }
+
+  public String getModello() {
+    return modello;
+  }
+
+  public float getPrezzo() {
+    return prezzo;
+  }
+
   public String toString() {
     return String.format("%6d %15s %15s", codice, marca, modello);
   }
