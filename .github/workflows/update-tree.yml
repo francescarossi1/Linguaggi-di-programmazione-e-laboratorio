@@ -1,0 +1,79 @@
+name: Aggiorna Struttura Repository
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Genera albero e aggiorna README
+        run: |
+          python3 - << 'EOF'
+          import os
+          import re
+
+          IGNORE = {'.git', '.github', '.DS_Store', 'README.md'}
+
+          def natural_key(s):
+              return [int(text) if text.isdigit() else text.lower() for text in re.split(r'(\d+)', s)]
+
+          with open("README.md", "r", encoding="utf-8") as f:
+              content = f.read()
+
+          start_tag = "<!-- TREE_START -->"
+          end_tag = "<!-- TREE_END -->"
+
+          if start_tag not in content or end_tag not in content:
+              exit(0)
+
+          # Conserva i commenti (# ...) anche se il nome cartella contiene spazi o parentesi
+          existing_block = content.split(start_tag)[1].split(end_tag)[0]
+          descriptions = {}
+          for line in existing_block.splitlines():
+              match = re.search(r'[📁📄]\s+(.+?/)\s+(#.*)', line)
+              if match:
+                  descriptions[match.group(1).strip()] = match.group(2).strip()
+
+          entries = [e for e in os.listdir(".") if e not in IGNORE and os.path.isdir(e)]
+          entries.sort(key=natural_key)
+
+          lines = ["Linguaggi-di-programmazione-e-laboratorio/"]
+          for i, entry in enumerate(entries):
+              is_last = (i == len(entries) - 1)
+              connector = "└── " if is_last else "├── "
+              key = f"{entry}/"
+              base = f"{connector}📁 {key}"
+              desc = descriptions.get(key, "")
+              if desc:
+                  padding = " " * max(2, 46 - len(base))
+                  lines.append(f"{base}{padding}{desc}")
+              else:
+                  lines.append(base)
+
+          tree_block = f"{start_tag}\n<pre><code>" + "\n".join(lines) + f"\n</code></pre>\n{end_tag}"
+
+          before = content.split(start_tag)[0]
+          after = content.split(end_tag)[1]
+          new_content = before + tree_block + after
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(new_content)
+          EOF
+
+      - name: Commit e Push modifiche
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "docs: aggiorna struttura repository" && git push)
