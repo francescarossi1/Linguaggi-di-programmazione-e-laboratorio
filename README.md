@@ -20,28 +20,28 @@
 <!-- TREE_START -->
 <pre><code>Linguaggi-di-programmazione-e-laboratorio/
 ├── 📁 ESAMI RISOLTI/
-├── 📁 Lezione1 - (Hello e primi es)/       # Hello World e lettura numero da tastiera
-├── 📁 Lezione2 - (Counter)/                # Esercizi sulla classe Counter: equal e copy
-├── 📁 Lezione3 - (Orologio e overloading)/ # Esercizio Orologio e overloading dei metodi Counter
-├── 📁 Lezione4 - (stringhe)/               # Decremento Counter, funzioni per stringhe: gestione buffer, immutabilità, oggetti, confronto, concatenazione
-├── 📁 Lezione5 - (array di oggetti e wrapper)/ # Array di oggetti, estensioni Orologio e tipi Wrapper, es9_lab e es10_lab
-├── 📁 Lezione6 - (ereditarietà)/           # Ereditarietà, BiCounter, Persona, Alieni
-├── 📁 Lezione7 - (polimorfismo)/           # Polimorfismo Dottori e Persona, esempi con Counter
-├── 📁 Lezione8 - (classi astratte e interfacce)/ # Classi astratte e interfacce
-├── 📁 Lezione9 - (eccezioni)/              # Eccezioni
-├── 📁 Lezione10 - (input output)/          # Input Output
-├── 📁 Lezione11 - (Collezioni)/            # Collezioni
-├── 📁 Lezione12 - (JCF con tipi generici)/ # JCF con tipi generici
-├── 📁 Lezione13 - (Generici)/              # Generici
+├── 📁 esercitazioni/
+├── 📁 Lezione1 - (Hello e primi es)/          # Hello World e lettura numero da tastiera
+├── 📁 Lezione2 - (Counter)/                   # Esercizi sulla classe Counter: equal e copy
+├── 📁 Lezione3 - (Orologio e overloading)/    # Esercizio Orologio e overloading dei metodi Counter
+├── 📁 Lezione4 - (stringhe)/                  # Decremento Counter, funzioni per stringhe: gestione buffer, immutabilità, oggetti, confronto, concatenazione
+├── 📁 Lezione5 - (array di oggetti e wrapper)/  # Array di oggetti, estensioni Orologio e tipi Wrapper, es9_lab e es10_lab
+├── 📁 Lezione6 - (ereditarietà)/              # Ereditarietà, BiCounter, Persona, Alieni
+├── 📁 Lezione7 - (polimorfismo)/              # Polimorfismo Dottori e Persona, esempi con Counter
+├── 📁 Lezione8 - (classi astratte e interfacce)/  # Classi astratte e interfacce
+├── 📁 Lezione9 - (eccezioni)/                 # Eccezioni
+├── 📁 Lezione10 - (input output)/             # Input Output
+├── 📁 Lezione11 - (Collezioni)/               # Collezioni
+├── 📁 Lezione12 - (JCF con tipi generici)/    # JCF con tipi generici
+├── 📁 Lezione13 - (Generici)/                 # Generici
 ├── 📁 Lezione 14 - (Lambda)/
 ├── 📁 Lezione 15 - (Stream API)/
-├── 📁 Tutorato1/                           # Coppie di numeri, elementi sotto la media, conteggio caratteri
-├── 📁 Tutorato2/                           # Scanner con stringhe, Videoteca
-├── 📁 Tutorato3/                           # es1:Alieni; es2:Dottori; es3:classi astratte, interfacce; es 4:convertitore
+├── 📁 simulazioni_primo_parziale/
+├── 📁 Tutorato1/                              # Coppie di numeri, elementi sotto la media, conteggio caratteri
+├── 📁 Tutorato2/                              # Scanner con stringhe, Videoteca
+├── 📁 Tutorato3/                              # es1:Alieni; es2:Dottori; es3:classi astratte, interfacce; es 4:convertitore
 ├── 📁 Tutorato4/
-├── 📁 Tutorato5/
-├── 📁 esercitazioni/
-└── 📁 simulazioni_primo_parziale/
+└── 📁 Tutorato5/
 </code></pre>
 <!-- TREE_END -->
 
