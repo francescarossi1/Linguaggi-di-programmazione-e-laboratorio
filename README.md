@@ -37,6 +37,7 @@
 ├── 📁 Lezione 14 - (Lambda)/
 ├── 📁 Lezione 15 - (Stream API)/
 ├── 📁 simulazioni_primo_parziale/
+├── 📁 TEORIA/
 ├── 📁 Tutorato1/                              # Coppie di numeri, elementi sotto la media, conteggio caratteri
 ├── 📁 Tutorato2/                              # Scanner con stringhe, Videoteca
 ├── 📁 Tutorato3/                              # es1:Alieni; es2:Dottori; es3:classi astratte, interfacce; es 4:convertitore
